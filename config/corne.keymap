@@ -52,7 +52,7 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
-                extra1 {
+        extra1 {
             status = "reserved";
         };
 
