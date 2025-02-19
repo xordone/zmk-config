@@ -28,14 +28,14 @@
         comma: comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp KP_COMMA &kp SPACE>;
+            bindings = <&kp KP_COMMA &kp SPACE>;
             label = "COMMA";
         };
 
         dot: dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp KP_DOT &kp SPACE &sk LSHIFT>;
+            bindings = <&kp KP_DOT &kp SPACE &sk LSHIFT>;
             label = "DOT";
         };
     };
