@@ -20,11 +20,11 @@
     };
 
     macros {
-        comma: new_macro {
+        comma: comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mo 1 &kp COMMA &kp SPACE>;
-            label = "NEW_MACRO";
+            label = "COMMA";
         };
 
         dot: dot {
