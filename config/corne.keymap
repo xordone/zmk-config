@@ -87,10 +87,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR  &kp RPAR  &gresc
-&kp LCTRL  &trans    &trans  &trans     &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT       &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans     &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC       &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LCTRL  &to 3     &kp SPACE    &kp RET    &trans     &kp BACKSPACE
+&kp TAB    &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK   &kp LPAR  &kp RPAR  &gresc
+&kp LCTRL  &trans    &trans  &trans     &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT    &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &trans    &trans  &trans     &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC    &kp RBRC  &kp PIPE  &kp TILDE
+                             &kp LCTRL  &to 3     &kp SPACE    &kp RET    &trans     &kp DELETE
             >;
 
             label = "raise";
@@ -98,10 +98,10 @@
 
         game {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E   &kp R   &kp T     &trans  &trans          &kp UP_ARROW    &trans     &trans  &to 0
-&kp TAB    &kp A  &kp S  &kp D   &kp F   &kp G     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B     &trans  &trans          &trans          &trans     &trans  &kp LA(TAB)
-                         &trans  &trans  &trans    &trans  &trans          &trans
+&kp ESC    &kp Q  &kp W  &kp E   &kp R   &kp T     &trans      &trans          &kp UP_ARROW    &trans     &trans  &to 0
+&kp TAB    &kp A  &kp S  &kp D   &kp F   &kp G     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp KP_DOT  &kp KP_COMMA    &trans          &trans     &trans  &kp LA(TAB)
+                         &trans  &trans  &trans    &trans      &trans          &trans
             >;
 
             label = "game";
