@@ -7,15 +7,32 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     combos {
         compatible = "zmk,combos";
 
         test {
-            bindings = <&kp KP_ENTER>;
+            bindings = <&kt SPACE>;
             key-positions = <5 4>;
             layers = <0>;
+        };
+    };
+
+    macros {
+        comma: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp COMMA &kp SPACE>;
+            label = "NEW_MACRO";
+        };
+
+        dot: dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp DOT &kp SPACE &sk LSHIFT>;
+            label = "DOT";
         };
     };
 
