@@ -98,7 +98,7 @@
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E   &kp R   &kp T     &trans  &trans          &kp UP_ARROW    &trans     &trans  &to 0
 &kp TAB    &kp A  &kp S  &kp D   &kp F   &kp G     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B     &trans  &trans          &trans          &trans     &trans  &trans
+&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B     &trans  &trans          &trans          &trans     &trans  &kp LA(TAB)
                          &trans  &trans  &trans    &trans  &trans          &trans
             >;
 
