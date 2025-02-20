@@ -10,7 +10,6 @@
 &sk { quick-release; };
 
 / {
-
     combos {
         compatible = "zmk,combos";
 
@@ -42,14 +41,6 @@
             label = "DOT";
         };
     };
-            behaviors {
-        m_comma: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&comma>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -62,10 +53,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&gresc     &kp Q  &kp W  &kp E      &kp R    &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P     &kp LEFT_BRACKET
-&kp TAB    &kp A  &kp S  &kp D      &kp F    &kp G        &kp H    &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V    &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp LC(LEFT_SHIFT)
-                         &kp LCTRL  &m_comma  &kp SPACE    &kp RET  &mo 2  &kp BACKSPACE
+&gresc     &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P     &kp LEFT_BRACKET
+&kp TAB    &kp A  &kp S  &kp D      &kp F  &kp G        &kp H    &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp LC(LEFT_SHIFT)
+                         &kp LCTRL  &none  &kp SPACE    &kp RET  &mo 2  &kp BACKSPACE
             >;
 
             label = "main";
