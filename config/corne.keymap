@@ -18,6 +18,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(FSLH) &kp SPACE>;
             label = "COMMA";
+            wait-ms = <20>;
+            tap-ms = <10>;
         };
 
         dot: dot {
@@ -25,6 +27,8 @@
             #binding-cells = <0>;
             bindings = <&kp FSLH &kp SPACE &sk LSHIFT>;
             label = "DOT";
+            wait-ms = <20>;
+            tap-ms = <10>;
         };
     };
 
