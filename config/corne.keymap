@@ -10,21 +10,7 @@
 &sk { quick-release; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        comma {
-            bindings = <&comma>;
-            key-positions = <40 41>;
-            layers = <0>;
-        };
-
-        dot {
-            bindings = <&dot>;
-            key-positions = <37 36>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         comma: comma {
@@ -49,7 +35,7 @@
             bindings = <&mo>, <&comma>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
         };
 
         tap_dot: tap_dot {
@@ -58,7 +44,7 @@
             bindings = <&mo>, <&dot>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
         };
     };
 
