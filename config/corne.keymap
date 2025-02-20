@@ -9,7 +9,7 @@
 
 &sk { quick-release; };
 
-/ {
+{
     combos {
         compatible = "zmk,combos";
 
