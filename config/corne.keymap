@@ -18,7 +18,7 @@
 
         boot {
             bindings = <&bootloader>;
-            key-positions = <36 38 39 40 41 36 37 38 39 40 41>;
+            key-positions = <37 38 36 39 40 41>;
         };
     };
 
