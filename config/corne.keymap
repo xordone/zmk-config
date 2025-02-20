@@ -10,14 +10,7 @@
 &sk { quick-release; };
 
 / {
-        behaviors {
-        m_comma: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&comma>;
-        };
-    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -47,6 +40,14 @@
             #binding-cells = <0>;
             bindings = <&kp FSLH &kp SPACE &sk LSHIFT>;
             label = "DOT";
+        };
+    };
+            behaviors {
+        m_comma: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&comma>;
         };
     };
 
@@ -107,8 +108,8 @@
         game {
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E   &kp R   &kp T     &trans      &trans          &kp UP_ARROW    &trans     &trans  &to 0
-&kp TAB    &kp A  &kp S  &kp D   &kp F   &kp G     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp KP_DOT  &kp KP_COMMA    &trans          &trans     &trans  &kp LA(TAB)
+&kp TAB    &kp A  &kp S  &kp D   &kp F   &kp G     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &kp LALT
+&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp KP_DOT  &kp KP_COMMA    &trans          &trans     &trans  &kp TAB
                          &trans  &trans  &trans    &trans      &trans          &trans
             >;
 
