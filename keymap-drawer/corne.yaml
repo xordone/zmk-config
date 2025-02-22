@@ -38,7 +38,7 @@ layers:
   - /
   - Ctl+LEFT SHIFT
   - LCTRL
-  - {t: '&comma undefined', h: lower}
+  - '&comma'
   - {t: SPACE, h: LEFT SHIFT}
   - {t: RET, h: LEFT SHIFT}
   - {t: '&dot undefined', h: raise}
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LCTRL
-  - {type: held}
+  - {t: ▽, type: trans}
   - SPACE
   - RET
   - {t: game, h: toggle}
