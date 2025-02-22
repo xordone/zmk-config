@@ -1,0 +1,180 @@
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layers:
+  main:
+  - {t: ESC, s: '`'}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - TAB
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Ctl+LEFT SHIFT
+  - LCTRL
+  - {t: '&comma 1', h: lower}
+  - {t: SPACE, h: LEFT SHIFT}
+  - {t: RET, h: LEFT SHIFT}
+  - {t: '&dot', h: raise}
+  - BACKSPACE
+  lower:
+  - TAB
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ESC, s: '`'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LSHFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LCTRL
+  - {type: held}
+  - SPACE
+  - RET
+  - {t: game, h: toggle}
+  - BACKSPACE
+  raise:
+  - TAB
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: ESC, s: '`'}
+  - LCTRL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
+  - LSHFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - LCTRL
+  - {t: game, h: toggle}
+  - SPACE
+  - RET
+  - {type: held}
+  - DELETE
+  game:
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - ''
+  - ''
+  - UP ARROW
+  - ''
+  - ''
+  - {t: main, h: toggle}
+  - TAB
+  - A
+  - S
+  - D
+  - F
+  - G
+  - ''
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT
+  - ''
+  - LALT
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - TAB
+  - LEFT CONTROL
+  - LEFT SHIFT
+  - SPACE
+  - RET
+  - LSHFT
+  - LALT
+  extra: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', '', '', '']
+combos:
+- p: [24, 35]
+  k: '&bootloader'
+  l: [game]
