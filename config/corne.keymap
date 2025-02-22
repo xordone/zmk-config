@@ -30,7 +30,7 @@
             bindings = <&kp LS(FSLH) &kp SPACE>;
             label = "COMMA";
             wait-ms = <20>;
-            tap-ms = <10>;
+            tap-ms = <20>;
         };
 
         dot: dot {
@@ -39,7 +39,7 @@
             bindings = <&kp FSLH &kp SPACE &sk LSHIFT>;
             label = "DOT";
             wait-ms = <20>;
-            tap-ms = <10>;
+            tap-ms = <20>;
         };
     };
 
