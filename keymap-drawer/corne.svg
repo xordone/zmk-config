@@ -146,7 +146,7 @@ svg.keymap {
 
 /* Color accent for held keys */
 rect.held, rect.combo.held {
-    fill: #f11;
+    fill: #f66;
 }
 
 /* Technique borrowed and extended from https://github.com/englmaxi/zmk-config/blob/master/keymap-drawer/config.yaml */
