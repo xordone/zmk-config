@@ -94,7 +94,7 @@
 &kp F12       &kp N1  &kp N2  &kp N3     &kp N4  &kp N5       &kp N6   &kp N7              &kp N8          &kp N9         &kp N0  &gresc
 &kp F11       &kp F1  &kp F2  &kp F3     &kp F4  &kp F5       &none    &kp LC(LEFT_ARROW)  &kp UP          &kp LC(RIGHT)  &trans  &trans
 &kp LEFT_ALT  &kp F6  &kp F7  &kp F8     &kp F9  &kp F10      &trans   &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT      &trans  &trans
-                              &kp LCTRL  &kp A   &kp SPACE    &kp RET  &to 3               &kp BACKSPACE
+                              &kp LCTRL  &none   &kp SPACE    &kp RET  &to 3               &kp BACKSPACE
             >;
 
             label = "lower";
@@ -111,7 +111,7 @@
 &kp TAB       &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK   &kp LPAR  &kp RPAR  &gresc
 &kp LCTRL     &trans    &trans  &trans     &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT    &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LEFT_ALT  &trans    &trans  &trans     &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC    &kp RBRC  &kp PIPE  &kp TILDE
-                                &kp LCTRL  &to 3     &kp SPACE    &kp RET    &kp A      &kp DELETE
+                                &kp LCTRL  &to 3     &kp SPACE    &kp RET    &none      &kp DELETE
             >;
 
             label = "raise";
