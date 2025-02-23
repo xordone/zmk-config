@@ -87,7 +87,7 @@ layers:
   - {t: game, h: toggle}
   - BACKSPACE
   raise:
-  - TAB
+  - ''
   - '!'
   - '@'
   - '#'
@@ -99,7 +99,7 @@ layers:
   - (
   - )
   - {t: ESC, s: '`'}
-  - LCTRL
+  - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
