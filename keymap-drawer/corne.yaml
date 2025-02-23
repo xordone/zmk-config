@@ -63,9 +63,9 @@ layers:
   - F4
   - F5
   - ''
-  - Sft+LEFT ARROW
+  - Ctl+LEFT ARROW
   - UP
-  - Sft+RIGHT
+  - Ctl+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT ALT
