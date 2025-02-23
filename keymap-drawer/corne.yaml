@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LCTRL
-  - {t: ▽, type: trans}
+  - {type: held}
   - SPACE
   - RET
   - {t: game, h: toggle}
@@ -127,7 +127,7 @@ layers:
   - {t: game, h: toggle}
   - SPACE
   - RET
-  - {t: ▽, type: trans}
+  - {type: held}
   - DELETE
   game:
   - ESC
