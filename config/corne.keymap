@@ -9,8 +9,6 @@
 
 &sk { quick-release; };
 
-&mt { hold-trigger-on-release; };
-
 / {
     combos {
         compatible = "zmk,combos";
