@@ -45,7 +45,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   lower:
   - F12
-  - {t: '1', s: '!'}
+  - '1'
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
