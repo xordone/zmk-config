@@ -4,6 +4,7 @@ on:
   push: # automatically run on changes to following paths
     paths:
       - "config/corne.keymap"
+      - "keymap-drawer/config.yaml"
 jobs:
   draw:
     name: Draw keymaps
