@@ -89,8 +89,8 @@
 
             bindings = <
 &kp F12       &kp N1  &kp N2  &kp N3     &kp N4  &kp N5       &kp N6   &kp N7              &kp N8          &kp N9         &kp N0  &gresc
-&kp F11       &kp F1  &kp F2  &kp F3     &kp F4  &kp F5       &none    &kp LC(LEFT_ARROW)  &kp UP          &kp LC(RIGHT)  &trans  &trans
-&kp LEFT_ALT  &kp F6  &kp F7  &kp F8     &kp F9  &kp F10      &trans   &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT      &trans  &trans
+&kp F11       &kp F1  &kp F2  &kp F3     &kp F4  &kp F5       &none    &kp LC(LEFT)  &kp UP          &kp LC(RIGHT)  &trans  &trans
+&kp LEFT_ALT  &kp F6  &kp F7  &kp F8     &kp F9  &kp F10      &trans   &kp LEFT      &kp DOWN  &kp RIGHT      &trans  &trans
                               &kp LCTRL  &none   &kp SPACE    &kp RET  &to 3               &kp BACKSPACE
             >;
 
@@ -116,8 +116,8 @@
 
         game {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E             &kp R      &kp T        &none         &none           &kp UP_ARROW    &none      &none   &to 0
-&kp TAB    &kp A  &kp S  &kp D             &kp F      &kp G        &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none   &kp LALT
+&kp ESC    &kp Q  &kp W  &kp E             &kp R      &kp T        &none         &none           &kp UP    &none      &none   &to 0
+&kp TAB    &kp A  &kp S  &kp D             &kp F      &kp G        &none         &kp LEFT  &kp DOWN  &kp RIGHT  &none   &kp LALT
 &kp LSHFT  &kp Z  &kp X  &kp C             &kp V      &kp B        &kp NUMBER_1  &kp N2          &kp N3          &kp N4     &kp N5  &kp TAB
                          &kp LEFT_CONTROL  &kp LSHFT  &kp SPACE    &kp RET       &kp LSHFT       &kp LALT
             >;
