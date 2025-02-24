@@ -201,7 +201,7 @@ parse_config:
     TILDE2: "~"
 
     # Numbers
-    N1:
+    N1, NUMBER_1:
       tap: 1
       shifted: "!"
     N2:
