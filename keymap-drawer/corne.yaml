@@ -25,7 +25,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - LEFT ALT
+  - $$mdi:apple-keyboard-option$$
   - Z
   - X
   - C
@@ -36,11 +36,11 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - Ctl+LEFT SHIFT
+  - Ctl+$$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - {t: '&comma', h: lower}
-  - {t: '$$mdi:keyboard-space$$', h: LEFT SHIFT}
-  - {t: RET, h: LEFT SHIFT}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: RET, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '&dot', h: raise}
   - {t: '$$mdi:backspace$$', type: backspace}
   lower:
@@ -63,12 +63,12 @@ layers:
   - F4
   - F5
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+$$mdi:arrow-left-bold$$
+  - $$mdi:arrow-left-circle$$
   - $$mdi:arrow-up-bold$$
-  - Ctl+$$mdi:arrow-right-bold$$
+  - $$mdi:arrow-right-circle$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - LEFT ALT
+  - $$mdi:apple-keyboard-option$$
   - F6
   - F7
   - F8
@@ -111,7 +111,7 @@ layers:
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
-  - LEFT ALT
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -166,7 +166,7 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - $$mdi:keyboard-tab$$
-  - LEFT CONTROL
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:keyboard-space$$
   - RET
