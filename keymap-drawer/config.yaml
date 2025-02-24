@@ -234,15 +234,27 @@ parse_config:
 
     # Modifiers
     LCTRL: $$mdi:apple-keyboard-control$$
+    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
+
     LALT: $$mdi:apple-keyboard-option$$
+    LEFT_ALT: $$mdi:apple-keyboard-option$$
+
     LSHIFT: $$mdi:apple-keyboard-shift$$
+    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
     LSHFT: $$mdi:apple-keyboard-shift$$
+
     LCMD: $$mdi:apple-keyboard-command$$
+
     RCTRL: $$mdi:apple-keyboard-control$$
+
     RALT: $$mdi:apple-keyboard-option$$
+
     RSHIFT: $$mdi:apple-keyboard-shift$$
+
     RSHFT: $$mdi:apple-keyboard-shift$$
+
     RCMD: $$mdi:apple-keyboard-command$$
+
     LS(LC(LALT)): $$mdi:triangle$$ # Meh
 
     # Arrows
@@ -250,6 +262,8 @@ parse_config:
     DOWN: $$mdi:arrow-down-bold$$
     LEFT: $$mdi:arrow-left-bold$$
     RIGHT: $$mdi:arrow-right-bold$$
+    LC(RIGHT): $$mdi:arrow-right-circle$$
+    LC(LEFT): $$mdi:arrow-left-circle$$
     PG_UP: $$mdi:transfer-up$$
     PG_DN: $$mdi:transfer-down$$
 
