@@ -41,7 +41,7 @@ layers:
   - {t: '&comma', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: RET, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '&dot', h: SYM}
+  - {t: '&dot', h: NAV}
   - {t: '$$mdi:backspace$$', type: backspace}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -127,7 +127,7 @@ layers:
   - SYM
   - $$mdi:keyboard-space$$
   - RET
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - $$mdi:backspace-reverse-outline$$
   game:
   - $$mdi:keyboard-esc$$
@@ -210,7 +210,7 @@ layers:
   - '|'
   - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
