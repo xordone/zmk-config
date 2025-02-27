@@ -74,13 +74,13 @@
 &gresc        &kp Q  &kp W  &kp E      &kp R           &kp T                   &kp Y               &kp U         &kp I          &kp O    &kp P     &kp LEFT_BRACKET
 &kp TAB       &kp A  &kp S  &kp D      &kp F           &kp G                   &kp H               &kp J         &kp K          &kp L    &kp SEMI  &kp SQT
 &kp LEFT_ALT  &kp Z  &kp X  &kp C      &kp V           &kp B                   &kp N               &kp M         &kp COMMA      &kp DOT  &kp FSLH  &kp LC(LEFT_SHIFT)
-                            &kp LCTRL  &tap_comma 1 0  &mt LEFT_SHIFT SPACE    &mt LEFT_SHIFT RET  &tap_dot 2 0  &kp BACKSPACE
+                            &kp LCTRL  &tap_comma 1 0  &mt LEFT_SHIFT SPACE    &mt LEFT_SHIFT RET  &tap_dot 4 0  &kp BACKSPACE
             >;
 
-            label = "main";
+            label = "MAIN";
         };
 
-        lower {
+        num {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -88,16 +88,38 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F12       &kp N1  &kp N2  &kp N3     &kp N4  &kp N5       &kp N6   &kp N7              &kp N8          &kp N9         &kp N0  &gresc
-&kp F11       &kp F1  &kp F2  &kp F3     &kp F4  &kp F5       &none    &kp LC(LEFT)  &kp UP          &kp LC(RIGHT)  &trans  &trans
-&kp LEFT_ALT  &kp F6  &kp F7  &kp F8     &kp F9  &kp F10      &trans   &kp LEFT      &kp DOWN  &kp RIGHT      &trans  &trans
-                              &kp LCTRL  &none   &kp SPACE    &kp RET  &to 3               &kp BACKSPACE
+&none         &kp N1  &kp N2  &kp N3     &kp N4  &kp N5       &kp N6   &kp N7  &kp N8      &kp N9  &kp N0   &gresc
+&kp F11       &kp F1  &kp F2  &kp F3     &kp F4  &kp F5       &kp F6   &kp F7  &kp F8      &kp F9  &kp F10  &kp F12
+&kp LEFT_ALT  &none   &none   &none      &none   &none        &none    &none   &none       &none   &none    &none
+                              &kp LCTRL  &none   &kp SPACE    &kp RET  &mo 4   &kp DELETE
             >;
 
-            label = "lower";
+            label = "NUM";
         };
 
-        raise {
+        nav {
+            bindings = <
+&none  &none  &none  &none      &none  &none        &none    &kp LC(LEFT)  &kp LC(UP)  &kp LC(DOWN)  &kp LC(RIGHT)  &to 0
+&none  &none  &none  &none      &none  &none        &none    &kp LEFT      &kp UP      &kp DOWN      &kp RIGHT      &none
+&none  &none  &none  &none      &none  &none        &none    &kp HOME      &kp PG_UP   &kp PG_DN     &kp END        &none
+                     &kp LCTRL  &mo 4  &kp SPACE    &kp RET  &none         &kp DELETE
+            >;
+
+            label = "NAV";
+        };
+
+        game {
+            bindings = <
+&kp ESC    &kp Q  &kp W  &kp E             &kp R      &kp T        &none         &none      &kp UP    &none      &none   &to 0
+&kp TAB    &kp A  &kp S  &kp D             &kp F      &kp G        &none         &kp LEFT   &kp DOWN  &kp RIGHT  &none   &kp LALT
+&kp LSHFT  &kp Z  &kp X  &kp C             &kp V      &kp B        &kp NUMBER_1  &kp N2     &kp N3    &kp N4     &kp N5  &kp TAB
+                         &kp LEFT_CONTROL  &kp LSHFT  &kp SPACE    &kp RET       &kp LSHFT  &kp LALT
+            >;
+
+            label = "game";
+        };
+
+        sym {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -105,35 +127,13 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none         &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK   &kp LPAR  &kp RPAR  &gresc
-&kp TAB       &trans    &trans  &trans     &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT    &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LEFT_ALT  &trans    &trans  &trans     &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC    &kp RBRC  &kp PIPE  &kp TILDE
-                                &kp LCTRL  &to 3     &kp SPACE    &kp RET    &none      &kp DELETE
+&none         &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &gresc
+&kp TAB       &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LEFT_ALT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                &none     &none     &none        &none      &none      &to 3
             >;
 
-            label = "raise";
-        };
-
-        game {
-            bindings = <
-&kp ESC    &kp Q  &kp W  &kp E             &kp R      &kp T        &none         &none           &kp UP    &none      &none   &to 0
-&kp TAB    &kp A  &kp S  &kp D             &kp F      &kp G        &none         &kp LEFT  &kp DOWN  &kp RIGHT  &none   &kp LALT
-&kp LSHFT  &kp Z  &kp X  &kp C             &kp V      &kp B        &kp NUMBER_1  &kp N2          &kp N3          &kp N4     &kp N5  &kp TAB
-                         &kp LEFT_CONTROL  &kp LSHFT  &kp SPACE    &kp RET       &kp LSHFT       &kp LALT
-            >;
-
-            label = "game";
-        };
-
-        extra {
-            bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none    &none  &none  &none
-            >;
-
-            label = "extra";
+            label = "SYM";
         };
     };
 };
