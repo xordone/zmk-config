@@ -99,10 +99,10 @@
 
         nav {
             bindings = <
-&none  &none  &none  &none      &none  &none        &none    &kp LC(LEFT)  &kp LC(UP)  &kp LC(DOWN)  &kp LC(RIGHT)  &to 0
-&none  &none  &none  &none      &none  &none        &none    &kp LEFT      &kp UP      &kp DOWN      &kp RIGHT      &none
-&none  &none  &none  &none      &none  &none        &none    &kp HOME      &kp PG_UP   &kp PG_DN     &kp END        &none
-                     &kp LCTRL  &mo 4  &kp SPACE    &kp RET  &none         &kp DELETE
+&none  &none  &none  &none      &none  &none        &none    &kp LC(LEFT)  &kp LC(UP)         &kp LC(DOWN)  &kp LC(RIGHT)  &to 0
+&none  &none  &none  &none      &none  &none        &none    &kp LEFT      &kp UP             &kp DOWN      &kp RIGHT      &none
+&none  &none  &none  &none      &none  &none        &none    &kp HOME      &kp PG_UP          &kp PG_DN     &kp END        &none
+                     &kp LCTRL  &mo 4  &kp SPACE    &kp RET  &none         &kp LC(BACKSPACE)
             >;
 
             label = "NAV";
