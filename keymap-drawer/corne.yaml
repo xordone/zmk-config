@@ -128,7 +128,7 @@ layers:
   - $$mdi:keyboard-space$$
   - RET
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   game:
   - $$mdi:keyboard-esc$$
   - Q
